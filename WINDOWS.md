@@ -2,9 +2,15 @@
 
 ## Prereqs 
 
-Install the [Windows Software Development Kit version 7.1](http://www.microsoft.com/downloads/dlx/en-us/listdetailsview.aspx?FamilyID=6b6c21d2-2006-4afa-9702-529fa782d63b).
+Install the [Windows Software Development Kit version 7.1](https://www.microsoft.com/en-us/download/confirmation.aspx?id=8279).
 
-Download and extract the [Snappy source distribution](http://snappy.googlecode.com/files/snappy-1.0.5.tar.gz)
+If you are running Windows 10 follow these steps :
+
+	1. Uninstall any Visual C++ 2010 Redistributables from the control panel first. 
+	2. Download the corresponding offline [ISO image](http://download.microsoft.com/download/F/1/0/F10113F5-B750-4969-A255-274341AC6BCE/GRMSDKX_EN_DVD.iso) from the Windows SDK archive.
+	3. After mounting the image, open F:\Setup\SDKSetup.exe directly
+
+Download and extract the [Snappy source distribution](https://codeload.github.com/google/snappy/legacy.tar.gz/master)
 
 1. Open the "Windows SDK 7.1 Command Prompt" :
    Start Menu -> "Microsoft Windows SDK v7.1" > "Windows SDK 7.1 Command Prompt"
