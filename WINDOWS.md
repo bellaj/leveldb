@@ -10,7 +10,7 @@ For Windows 8 and 10 follow these steps :
 2. Download the corresponding offline [ISO image](http://download.microsoft.com/download/F/1/0/F10113F5-B750-4969-A255-274341AC6BCE/GRMSDKX_EN_DVD.iso) from the Windows SDK archive.
 3. After mounting the image, open F:\Setup\SDKSetup.exe directly
 
-Download and extract the [Snappy source distribution](https://codeload.github.com/google/snappy/legacy.tar.gz/master)
+Download and extract the [Snappy source distribution](https://github.com/google/snappy/releases/download/1.1.4/snappy-1.1.4.tar.gz)
 
 1. Open the "Windows SDK 7.1 Command Prompt" :
    Start Menu -> "Microsoft Windows SDK v7.1" > "Windows SDK 7.1 Command Prompt"
@@ -21,12 +21,12 @@ Download and extract the [Snappy source distribution](https://codeload.github.co
 * 32 bit Version 
 
         setenv /x86
-        msbuild.exe /p:Configuration=Release /p:Platform=Win32 /p:Snappy=..\snappy-1.0.5
+        msbuild.exe /p:Configuration=Release /p:Platform=Win32 /p:Snappy=..\snappy-1.1.4
 
 * 64 bit Version 
 
         setenv /x64
-        msbuild.exe /p:Configuration=Release /p:Platform=x64 /p:Snappy=..\snappy-1.0.5
+        msbuild.exe /p:Configuration=Release /p:Platform=x64 /p:Snappy=..\snappy-1.1.4
 
 
 ## Building and Running the Benchmark app
@@ -34,12 +34,12 @@ Download and extract the [Snappy source distribution](https://codeload.github.co
 * 32 bit Version 
 
 	    setenv /x86
-	    msbuild.exe /p:Configuration=Benchmark /p:Platform=Win32 /p:Snappy=..\snappy-1.0.5
+	    msbuild.exe /p:Configuration=Benchmark /p:Platform=Win32 /p:Snappy=..\snappy-1.1.4
 		Benchmark\leveldb.exe
 
 * 64 bit Version 
 
 	    setenv /x64
-	    msbuild.exe /p:Configuration=Benchmark /p:Platform=x64 /p:Snappy=..\snappy-1.0.5
+	    msbuild.exe /p:Configuration=Benchmark /p:Platform=x64 /p:Snappy=..\snappy-1.1.4
 	    x64\Benchmark\leveldb.exe
 
